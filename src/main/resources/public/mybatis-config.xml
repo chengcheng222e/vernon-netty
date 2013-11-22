@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<properties resource="jdbc.properties" />
+
+	<typeAliases>
+		<package name="com.vernon.netty.domain" />
+	</typeAliases>
+
+	<environments default="production">
+		<environment id="production">
+			<transactionManager type="JDBC" />
+
+			<dataSource type="POOLED">
+				<property name="driver" value="${driverName}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${userName}" />
+				<property name="password" value="${password}" />
+
+				<!-- 在任意时间存在的活动(也就是正在使用)连接的数量。mybatis默认值:10 -->
+				<property name="poolMaximumActiveConnections" value="30" />
+				<property name="poolPingQuery" value="select 1" />
+				<property name="poolPingEnabled" value="true" />
+				<property name="poolPingConnectionsNotUsedFor" value="3600000" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<mappers>
+		<mapper resource="mapper/UserLoginMapper.xml" />
+    </mappers>
+
+</configuration>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="com.vernon.netty.dao.UserLoginDao">
+
+    <select id="getUserLogin" resultType="UserLogin">
+		SELECT
+		  user_id AS userId,
+          status
+		FROM user_login
+		WHERE
+		  password=#{password} and (email=#{account} or mobile=#{account})
+	</select>
+
+</mapper>
+
