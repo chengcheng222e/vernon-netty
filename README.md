@@ -1,7 +1,7 @@
 该项目是一个个人的开源项目, 是利用业余时间写的一个关于服务端通讯的项目.
 项目托管在 https://github.com/chengcheng222e 上面
 
-项目介绍:
+#项目介绍:#
     开发环境: Mac 10.9
     开发工具: IntelliJ IDEA 12, 一个很好的 Java 开发工具
     Jar 托管: gradle 1.6 现在最新的是 gradle 1.9
