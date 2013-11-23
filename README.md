@@ -12,10 +12,9 @@ vernon-netty
         JDK: 1.7
 
 ### 1.安装gradle
-        [http://www.gradle.org/](http://www.gradle.org/)
-
-        gradle官方使用说明，非常详细
-        [http://www.gradle.org/docs/current/userguide/userguide.html](http://www.gradle.org/docs/current/userguide/userguide.html)
+[http://www.gradle.org/](http://www.gradle.org/)<br/>
+gradle官方使用说明，非常详细<br/>
+[http://www.gradle.org/docs/current/userguide/userguide.html](http://www.gradle.org/docs/current/userguide/userguide.html)
 
 ### 2.项目导入eclipse
         本地local环境
