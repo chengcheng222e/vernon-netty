@@ -10,15 +10,18 @@ vernon-netty
         开发工具: IntelliJ IDEA 12, 一个很好的 Java 开发工具
         Jar 托管: gradle 1.6 现在最新的是 gradle 1.9
         JDK: 1.7
+        数据库: MySQL 数据库
 
 ### 1.安装gradle
 [http://www.gradle.org/](http://www.gradle.org/)<br/>
 gradle官方使用说明，非常详细<br/>
 [http://www.gradle.org/docs/current/userguide/userguide.html](http://www.gradle.org/docs/current/userguide/userguide.html)
 
-### 2.项目导入eclipse
+### 2.项目导入IDEA
         本地local环境
-        $ gradle eclipse
+        $ gradle idea -Denv=local, 默认是 local,可以指定是 alpha, product
+        在 document 里面导入 sql, 创建好数据库
+
 
 ### 3.打jar包
 
