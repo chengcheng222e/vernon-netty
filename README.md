@@ -35,7 +35,7 @@ gradle官方使用说明，非常详细<br/>
         $ gradle jar -Denv=product
 
 
-> 联系方式
-> QQ: 1147901965
-> Email: chengcheng222e@sina.com
+> 联系方式 <br>
+> QQ: 1147901965 <br>
+> Email: chengcheng222e@sina.com   <br>
 
