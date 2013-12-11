@@ -1,3 +1,6 @@
 out
 .idea
 .gradle
+*.iml
+*.ipr
+*.iws
