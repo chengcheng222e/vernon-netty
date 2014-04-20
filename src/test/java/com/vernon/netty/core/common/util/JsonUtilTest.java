@@ -42,7 +42,7 @@ public class JsonUtilTest {
     @Test
     public void testJson2Map() {
         String json = "{\"chenyuan\":{\"userId\":2222,\"userName\":\"陈袁22\"}," +
-                "\"daijing\":{\"userId\":2222,\"userName\":\"戴静22\"}}";
+                "\"daijing\":{\"userId\":2222,\"userName\":\"戴静22 这个是媳妇？ \"}}";
         Map<String, Object> map = (Map<String, Object>) JsonUtil.json2Map(json);
         if (map != null) {
             for (String key : map.keySet()) {
