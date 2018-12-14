@@ -31,7 +31,7 @@ public class MessageForwarder {
             Action cmd = ActionFactory.getAction(context);
             cmd.handle(context);
         } catch (Exception e) {
-            logger.error("{} 执行handle出现异常context:{}, e={}", operatorId, context, e.getMessage());
+            logger.error("{} 执行handle出现异常context:{}", operatorId, context, e);
             MessageResponse msgResponse = new MessageResponse(StatusCode.OPERATOR_ERROR);
             MessageForwarder.notify(context, msgResponse);
         }
